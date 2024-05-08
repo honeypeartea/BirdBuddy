@@ -21,7 +21,7 @@ function BirdSection({ bird }) {
                 </Typography>
                 <FormControlLabel
                     control={<Checkbox />}
-                    label="I already know this"
+                    label="I already know it!"
                 />
             </CardContent>
         </Card>

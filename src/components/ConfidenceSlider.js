@@ -7,7 +7,7 @@ function ConfidenceSlider({ onChange }) {
 
     const handleSliderChange = (event, newValue) => {
         setConfidenceLevel(newValue);
-        onChange(newValue);  // Call the passed onChange function to lift the state up if needed
+        //onChange(newValue);  // Call the passed onChange function to lift the state up if needed
     };
 
     return (

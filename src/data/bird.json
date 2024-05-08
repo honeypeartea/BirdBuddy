@@ -114,6 +114,121 @@
       "correctOption": 3,
       "points": 30,
       "image": "./img/Brown_Pelican_0012_94079.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "Red Winged Blackbird",
+        "American Robin",
+        "Eastern Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "image": "./blur/Red_Winged_Blackbird.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": ["Eagle", "Hawk", "Yellow Breasted Chat", "Vulture"],
+      "correctOption": 2,
+      "points": 10,
+      "image": "./blur/Yellow_Breasted_Chat.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "European Starling",
+        "Albatross",
+        "Fish Crow"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "image": "./blur/Fish_Crow.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Olive Sided Flycatcher",
+        "Sparrow",
+        "Warbler",
+        "Crow"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Olive_Sided_Flycatcher.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Eared Grebe",
+        "Mockingbird",
+        "Parrot",
+        "Cardinal"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Eared_Grebe.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Glaucous Winged Gull",
+        "Pelican",
+        "Duck",
+        "Swan"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Glaucous_Winged_Gull.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Canary",
+        "Green Violetear",
+        "Goldfinch",
+        "Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "image": "./blur/Green_Violetear.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Green Kingfisher",
+        "Turkey",
+        "Chicken",
+        "Pheasant"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "image": "./blur/Green_Kingfisher.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Merganser",
+        "Eagle",
+        "Hawk",
+        "Falcon"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "image": "./blur/Red_Breasted_Merganser.jpg"
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Duck",
+        "Goose",
+        "Swan",
+        "Pelican"
+      ],
+      "correctOption": 3,
+      "points": 30,
+      "image": "./blur/Brown_Pelican.jpg"
     }
   ]
 }

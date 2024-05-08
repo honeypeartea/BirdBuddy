@@ -65,7 +65,7 @@ function StartScreen({ numQues, dispatch }) {
                 />
             ) : (
                 <div style={{display: 'flex', alignItems: 'center'}}>
-                    <h4>Welcome, {name}</h4>
+                    <h4>Welcome, {name}!</h4>
                     <IconButton onClick={resetName} sx={{color: 'grey', marginLeft: '10px',marginBottom: '2.4rem'}}>
                         <CloseIcon/>
                     </IconButton>
@@ -121,11 +121,17 @@ function StartScreen({ numQues, dispatch }) {
                         minWidth: 140,
                         height: 50
                     }}
-                    onClick={() => dispatch({type: "start"})}
+                    onClick={() => dispatch({type: "aiOnly"})}
                 >
-                    Review
+                    AI Only
                 </Button>
             </div>
+            {!localStorage.getItem('userName') && (
+                <div style={{ marginTop: '20px', color: 'white', textAlign: 'center', fontSize: '1.5rem' }}>
+                    <p>First time here?</p>
+                    <p>Please update your name and go through the Warm Up section first.</p>
+                </div>
+            )}
         </div>
     );
 }

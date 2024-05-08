@@ -1,0 +1,374 @@
+{
+  "questions": [
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "Red Winged Blackbird",
+        "American Robin",
+        "Eastern Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "image": "./img/Red_Winged_Blackbird_0040_4522.jpg",
+      "gram": "./gram/Red_Winged_Blackbird_0040_4522.jpg",
+      "hint": [
+        "Blue Jay: blue, black crest",
+        "Red Winged Blackbird: black, red shoulders (Matched)",
+        "American Robin: orange breast, gray",
+        "Eastern Bluebird: bright blue, orange breast (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": ["Eagle", "Hawk", "Yellow Breasted Chat", "Vulture"],
+      "correctOption": 2,
+      "points": 10,
+      "image": "./img/Yellow_Breasted_Chat_0033_21873.jpg",
+      "gram": "./gram/Yellow_Breasted_Chat_0033_21873.jpg",
+      "hint": [
+        "Eagle: large, powerful, hooked beak",
+        "Hawk: sharp claws, keen eyesight",
+        "Yellow Breasted Chat: yellow breast, olive-green back (Matched)",
+        "Vulture: scavenger, bald head"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "European Starling",
+        "Albatross",
+        "Fish Crow"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "image": "./img/Fish_Crow_0024_26064.jpg",
+      "gram": "./gram/Fish_Crow_0024_26064.jpg",
+      "hint": [
+        "Blue Jay: blue, black crest",
+        "European Starling: glossy black plumage, yellow bill",
+        "Albatross: large seabird, long wings",
+        "Fish Crow: all black, smaller than American Crow (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Olive Sided Flycatcher",
+        "Sparrow",
+        "Warbler",
+        "Crow"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./img/Olive_Sided_Flycatcher_0027_30549.jpg",
+      "gram": "./gram/Olive_Sided_Flycatcher_0027_30549.jpg",
+      "hint": [
+        "Olive Sided Flycatcher: olive-gray sides, yellowish belly (Matched)",
+        "Sparrow: small, brown, streaked plumage",
+        "Warbler: small, colorful, insect-eating bird",
+        "Crow: large, all black, intelligent"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Eared Grebe",
+        "Mockingbird",
+        "Parrot",
+        "Cardinal"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./img/Eared_Grebe_0020_34131.jpg",
+      "gram": "./gram/Eared_Grebe_0020_34131.jpg",
+      "hint": [
+        "Eared Grebe: small, black cap, red eyes (Matched)",
+        "Mockingbird: gray and white plumage, long tail",
+        "Parrot: colorful, strong beak",
+        "Cardinal: bright red plumage, crest on head (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Glaucous Winged Gull",
+        "Pelican",
+        "Duck",
+        "Swan"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./img/Glaucous_Winged_Gull_0078_44461.jpg",
+      "gram": "./gram/Glaucous_Winged_Gull_0078_44461.jpg",
+      "hint": [
+        "Glaucous Winged Gull: large, white and gray, yellow bill (Matched)",
+        "Pelican: large, long bill, throat pouch",
+        "Duck: waterfowl, webbed feet, quacking sound",
+        "Swan: graceful, long neck, white plumage"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Canary",
+        "Green Violetear",
+        "Goldfinch",
+        "Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "image": "./img/Green_Violetear_0009_795647.jpg",
+      "gram": "./gram/Green_Violetear_0009_795647.jpg",
+      "hint": [
+        "Canary: small, yellow plumage, melodious song",
+        "Green Violetear: iridescent green, violet ear patch (Matched)",
+        "Goldfinch: bright yellow plumage, black wings",
+        "Bluebird: small, blue plumage, often seen perching (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Green Kingfisher",
+        "Turkey",
+        "Chicken",
+        "Pheasant"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "image": "./img/Green_Kingfisher_0018_71189.jpg",
+      "gram": "./gram/Green_Kingfisher_0018_71189.jpg",
+      "hint": [
+        "Green Kingfisher: small, green plumage, long bill (Matched)",
+        "Turkey: large, domesticated bird, fan-shaped tail",
+        "Chicken: domesticated bird, raised for meat and eggs (Matched)",
+        "Pheasant: colorful plumage, long tail, game bird"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Merganser",
+        "Eagle",
+        "Hawk",
+        "Falcon"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "image": "./img/Red_Breasted_Merganser_0012_79425.jpg",
+      "gram": "./gram/Red_Breasted_Merganser_0012_79425.jpg",
+      "hint": [
+        "Merganser: diving duck, serrated bill, red eyes (Matched)",
+        "Eagle: large bird of prey, hooked beak, powerful talons",
+        "Hawk: birds of prey, sharp claws, keen eyesight",
+        "Falcon: fast-flying bird of prey, pointed wings"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Duck",
+        "Goose",
+        "Swan",
+        "Pelican"
+      ],
+      "correctOption": 3,
+      "points": 30,
+      "image": "./img/Brown_Pelican_0012_94079.jpg",
+      "gram": "./gram/Brown_Pelican_0012_94079.jpg",
+      "hint": [
+        "Duck: waterfowl, webbed feet, quacking sound (Matched)",
+        "Goose: large waterfowl, long neck, honking sound",
+        "Swan: graceful, long neck, white plumage",
+        "Pelican: large water bird, long bill, throat pouch (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "Red Winged Blackbird",
+        "American Robin",
+        "Eastern Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "image": "./blur/Red_Winged_Blackbird.jpg",
+      "gram": "./gram/Red_Winged_Blackbird.jpg",
+      "hint": [
+        "Blue Jay: blue, black crest",
+        "Red Winged Blackbird: black, red shoulders (Matched)",
+        "American Robin: orange breast, gray",
+        "Eastern Bluebird: bright blue, orange breast (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": ["Eagle", "Hawk", "Yellow Breasted Chat", "Vulture"],
+      "correctOption": 2,
+      "points": 10,
+      "image": "./blur/Yellow_Breasted_Chat.jpg",
+      "gram": "./gram/Yellow_Breasted_Chat.jpg",
+      "hint": [
+        "Eagle: large, powerful, hooked beak",
+        "Hawk: sharp claws, keen eyesight",
+        "Yellow Breasted Chat: yellow breast, olive-green back (Matched)",
+        "Vulture: scavenger, bald head"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Blue Jay",
+        "European Starling",
+        "Albatross",
+        "Fish Crow"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "image": "./blur/Fish_Crow.jpg",
+      "gram": "./gram/Fish_Crow.jpg",
+      "hint": [
+        "Blue Jay: blue, black crest",
+        "European Starling: glossy black plumage, yellow bill",
+        "Albatross: large seabird, long wings",
+        "Fish Crow: all black, smaller than American Crow (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Olive Sided Flycatcher",
+        "Sparrow",
+        "Warbler",
+        "Crow"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Olive_Sided_Flycatcher.jpg",
+      "gram": "./gram/Olive_Sided_Flycatcher.jpg",
+      "hint": [
+        "Olive Sided Flycatcher: olive-gray sides, yellowish belly (Matched)",
+        "Sparrow: small, brown, streaked plumage",
+        "Warbler: small, colorful, insect-eating bird (Matched)",
+        "Crow: large, all black, intelligent"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Eared Grebe",
+        "Mockingbird",
+        "Parrot",
+        "Cardinal"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Eared_Grebe.jpg",
+      "gram": "./gram/Eared_Grebe.jpg",
+      "hint": [
+        "Eared Grebe: small, black cap, red eyes (Matched)",
+        "Mockingbird: gray and white plumage, long tail",
+        "Parrot: colorful, strong beak",
+        "Cardinal: bright red plumage, crest on head (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Glaucous Winged Gull",
+        "Pelican",
+        "Duck",
+        "Swan"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "image": "./blur/Glaucous_Winged_Gull.jpg",
+      "gram": "./gram/Glaucous_Winged_Gull.jpg",
+      "hint": [
+        "Glaucous Winged Gull: large, white and gray, yellow bill (Matched)",
+        "Pelican: large, long bill, throat pouch",
+        "Duck: waterfowl, webbed feet, quacking sound",
+        "Swan: graceful, long neck, white plumage"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Canary",
+        "Green Violetear",
+        "Goldfinch",
+        "Bluebird"
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "image": "./blur/Green_Violetear.jpg",
+      "gram": "./gram/Green_Violetear.jpg",
+      "hint": [
+        "Canary: small, yellow plumage, melodious song",
+        "Green Violetear: iridescent green, violet ear patch (Matched)",
+        "Goldfinch: bright yellow plumage, black wings",
+        "Bluebird: small, blue plumage, often seen perching (Matched)"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Green Kingfisher",
+        "Turkey",
+        "Chicken",
+        "Pheasant"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "image": "./blur/Green_Kingfisher.jpg",
+      "gram": "./gram/Green_Kingfisher.jpg",
+      "hint": [
+        "Green Kingfisher: small, green plumage, long bill (Matched)",
+        "Turkey: large, domesticated bird, fan-shaped tail",
+        "Chicken: domesticated bird, raised for meat and eggs",
+        "Pheasant: colorful plumage, long tail, game bird"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Merganser",
+        "Eagle",
+        "Hawk",
+        "Falcon"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "image": "./blur/Red_Breasted_Merganser.jpg",
+      "gram": "./gram/Red_Breasted_Merganser.jpg",
+      "hint": [
+        "Merganser: diving duck, serrated bill, red eyes (Matched)",
+        "Eagle: large bird of prey, hooked beak, powerful talons",
+        "Hawk: birds of prey, sharp claws, keen eyesight (Matched)",
+        "Falcon: fast-flying bird of prey, pointed wings"
+      ]
+    },
+    {
+      "question": "What bird species is shown in the image?",
+      "options": [
+        "Duck",
+        "Goose",
+        "Swan",
+        "Pelican"
+      ],
+      "correctOption": 3,
+      "points": 30,
+      "image": "./blur/Brown_Pelican.jpg",
+      "gram": "./gram/Brown_Pelican.jpg",
+      "hint": [
+        "Duck: waterfowl, webbed feet, quacking sound",
+        "Goose: large waterfowl, long neck, honking sound (Matched)",
+        "Swan: graceful, long neck, white plumage",
+        "Pelican: large water bird, long bill, throat pouch (Matched)"
+      ]
+    }
+  ]
+}

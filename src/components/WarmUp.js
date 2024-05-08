@@ -4,7 +4,7 @@
 //     return (
 //         <div className="warm-up">
 //             <h2>Warm-Up: Learn About Birds</h2>
-//             <p>Here's some information and images to get you ready for the quiz.</p>
+//             <p>Here's some information and warmup to get you ready for the quiz.</p>
 //             <img src="/ai.jpg" alt="Bird"/>
 //             <Button
 //                 variant="contained"
@@ -46,22 +46,22 @@ import { Button, Grid } from '@mui/material';
 import BirdSection from './BirdSection';
 
 const birds = [
-    { id: 1, name: "Brown Pelican", image: "./images/Brown_Pelican.jpg", description: "A large water bird famous for its distinctive bill and large throat pouch. Found along coastlines in the Americas, it is known for its spectacular plunge-diving behavior." },
-    { id: 2, name: "Eared Grebe", image: "./images/Eared_Grebe.jpg", description: "A small water bird with striking red eyes and a sharp-pointed bill, known for its elaborate mating dances and ability to swim underwater." },
-    { id: 3, name: "Fish Crow", image: "./images/Fish_Crow.jpg", description: "Similar in appearance to the American crow but slightly smaller and with a different call, found primarily in coastal areas in the southeastern United States." },
-    { id: 4, name: "Glaucous-Winged Gull", image: "./images/Glaucous_Winged_Gull.jpg", description: "A medium to large-sized gull with pale gray wings and pink legs, commonly found along the coasts of the northern Pacific." },
-    { id: 5, name: "Green Kingfisher", image: "./images/Green_Kingfisher.jpg", description: "A small, brightly colored kingfisher with green upperparts and white underparts, found from southern Texas to Argentina." },
-    { id: 6, name: "Green Violetear", image: "./images/Green_Violetea.jpg", description: "A vibrant, medium-sized hummingbird with metallic green feathers, found in forested areas from Mexico to South America." },
-    { id: 7, name: "Olive-Sided Flycatcher", image: "./images/Olive_Sided_Flycatcher.jpg", description: "A stocky songbird with a dark 'vest' that looks like it’s wearing a waistcoat, found in North American forests, particularly in coniferous regions." },
-    { id: 8, name: "Red-Breasted Merganser", image: "./images/Red_Breasted_Merganser.jpg", description: "A diving duck with a thin, serrated bill and a shaggy crest, found in freshwater and coastal areas across the Northern Hemisphere." },
-    { id: 9, name: "Red-Winged Blackbird", image: "./images/Red_Winged_Blackbird.jpg", description: "Recognizable by the bright red shoulder patches of males, this bird is a common sight in wetlands and agricultural areas across North America." },
-    { id: 10, name: "Yellow-Breasted Chat", image: "./images/Yellow_Breasted_Chat.jpg", description: "A large, secretive songbird with a bright yellow chest and a white belly, found in thickets and wooded areas across North America." }
+    { id: 1, name: "Brown Pelican", image: "./warmup/Brown_Pelican.jpg", description: "A large water bird famous for its distinctive bill and large throat pouch. Found along coastlines in the Americas, it is known for its spectacular plunge-diving behavior." },
+    { id: 2, name: "Eared Grebe", image: "./warmup/Eared_Grebe.jpg", description: "A small water bird with striking red eyes and a sharp-pointed bill, known for its elaborate mating dances and ability to swim underwater." },
+    { id: 3, name: "Fish Crow", image: "./warmup/Fish_Crow.jpg", description: "Similar in appearance to the American crow but slightly smaller and with a different call, found primarily in coastal areas in the southeastern United States." },
+    { id: 4, name: "Glaucous-Winged Gull", image: "./warmup/Glaucous_Winged_Gull.jpg", description: "A medium to large-sized gull with pale gray wings and pink legs, commonly found along the coasts of the northern Pacific." },
+    { id: 5, name: "Green Kingfisher", image: "./warmup/Green_Kingfisher.jpg", description: "A small, brightly colored kingfisher with green upperparts and white underparts, found from southern Texas to Argentina." },
+    { id: 6, name: "Green Violetear", image: "./warmup/Green_Violetea.jpg", description: "A vibrant, medium-sized hummingbird with metallic green feathers, found in forested areas from Mexico to South America." },
+    { id: 7, name: "Olive-Sided Flycatcher", image: "./warmup/Olive_Sided_Flycatcher.jpg", description: "A stocky songbird with a dark 'vest' that looks like it’s wearing a waistcoat, found in North American forests, particularly in coniferous regions." },
+    { id: 8, name: "Red-Breasted Merganser", image: "./warmup/Red_Breasted_Merganser.jpg", description: "A diving duck with a thin, serrated bill and a shaggy crest, found in freshwater and coastal areas across the Northern Hemisphere." },
+    { id: 9, name: "Red-Winged Blackbird", image: "./warmup/Red_Winged_Blackbird.jpg", description: "Recognizable by the bright red shoulder patches of males, this bird is a common sight in wetlands and agricultural areas across North America." },
+    { id: 10, name: "Yellow-Breasted Chat", image: "./warmup/Yellow_Breasted_Chat.jpg", description: "A large, secretive songbird with a bright yellow chest and a white belly, found in thickets and wooded areas across North America." }
 ];
 function WarmUp({ dispatch }) {
     return (
         <div>
             <h2>Warm-Up: Learn About Birds</h2>
-            {/*<p>Here's some information and images to get you ready for the quiz.</p>*/}
+            {/*<p>Here's some information and warmup to get you ready for the quiz.</p>*/}
             <Grid container spacing={2} style={{ width: '100%' }}>
                 {birds.map(bird => (
                     <Grid item xs={12} key={bird.id} style={{ display: 'flex', justifyContent: 'center' }}>

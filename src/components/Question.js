@@ -11,7 +11,7 @@ function Question({ question, dispatch, answer, showInfoButton }) {
     const closeModal = () => setModalOpen(false);
 
     const handleConfidenceChange = (level) => {
-        console.log("Confidence Level:", level); // You can replace this with any action you need
+        dispatch({ type: "setConfidence", payload: level });
     };
 
     return (
@@ -37,8 +37,8 @@ function Question({ question, dispatch, answer, showInfoButton }) {
                 isOpen={isModalOpen}
                 onClose={closeModal}
                 content={{
-                    image: 'https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg', // Example images URL
-                    text: 'Here is some additional information about the question.'
+                    image: question.gram,
+                    text: question.hint
                 }}
             />
         </div>

@@ -11,7 +11,7 @@ import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
 import WarmUp from "./WarmUp";
-import questionsData from '../data/bird.json';
+import questionsData from '../data/input.json';
 
 const SEC_PER_QUES = 60;
 
@@ -22,8 +22,10 @@ const initialState = {
   index: 0,
   answer: null,
   points: 0,
+  confidence: 0,
   secRemaining: null,
   showInfoButton: true,
+
 };
 
 function reducer(state, action) {
@@ -68,6 +70,7 @@ function reducer(state, action) {
         ...state,
         index: state.index + 1,
         answer: null,
+        confidence: state.confidence + 3
       };
     case "finish":
       return {
@@ -88,6 +91,19 @@ function reducer(state, action) {
       };
     case "prepare":
       return {...state, status: "preparing"};
+    case "setConfidence":
+      return {
+        ...state,
+        confidence: state.confidence + (action.payload-3),
+      };
+    case "aiOnly":
+      return {
+        ...state,
+        status: "finished",
+        points: 160,
+        confidence: 100,
+        secRemaining: 1200,
+      };
     default:
       throw new Error("Action Unknown");
   }
@@ -95,17 +111,26 @@ function reducer(state, action) {
 
 
 export default function App() {
-  const [{ questions, status, index, answer, points, secRemaining, showInfoButton }, dispatch] =
+  const [{ questions, status, index, answer, points, secRemaining, confidence ,showInfoButton }, dispatch] =
     useReducer(reducer, initialState);
 
   const numQues = questions.length;
   const totalPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   useEffect(() => {
     // Simulate loading data asynchronously
     setTimeout(() => {
-      dispatch({ type: "dataRecieved", payload: questionsData.questions });
-    }, 500);  // simulate delay
+      const shuffledQuestions = shuffleArray(questionsData.questions);
+      dispatch({ type: "dataRecieved", payload: shuffledQuestions });
+    }, 500); // simulate delay
   }, []);
 
   const initialTime = questions.length * SEC_PER_QUES;
@@ -149,8 +174,10 @@ export default function App() {
           <FinishScreen
             points={points}
             totalPoints={totalPoints}
+            confidence={confidence}
             timeTaken={initialTime - secRemaining}
             dispatch={dispatch}
+
           />
         )}
       </Main>
