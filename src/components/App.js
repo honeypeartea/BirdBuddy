@@ -10,6 +10,7 @@ import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
+import WarmUp from "./WarmUp";
 import questionsData from '../data/bird.json';
 
 const SEC_PER_QUES = 60;
@@ -22,6 +23,7 @@ const initialState = {
   answer: null,
   points: 0,
   secRemaining: null,
+  showInfoButton: true,
 };
 
 function reducer(state, action) {
@@ -42,6 +44,14 @@ function reducer(state, action) {
         ...state,
         status: "active",
         secRemaining: state.questions.length * SEC_PER_QUES,
+        showInfoButton: true,
+      };
+    case "base":
+      return {
+        ...state,
+        status: "active", // Or another status if needed
+        secRemaining: state.questions.length * SEC_PER_QUES,
+        showInfoButton: false, // Control visibility of the info button
       };
     case "newAnswer":
       const question = state.questions.at(state.index);
@@ -76,32 +86,20 @@ function reducer(state, action) {
         secRemaining: state.secRemaining - 1,
         status: state.secRemaining === 0 ? "finished" : state.status,
       };
+    case "prepare":
+      return {...state, status: "preparing"};
     default:
       throw new Error("Action Unknown");
   }
 }
 
+
 export default function App() {
-  const [{ questions, status, index, answer, points, secRemaining }, dispatch] =
+  const [{ questions, status, index, answer, points, secRemaining, showInfoButton }, dispatch] =
     useReducer(reducer, initialState);
 
   const numQues = questions.length;
   const totalPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
-  // useEffect(function () {
-  //   // const apiUrl = "http://localhost:8000/questions";
-  //   const apiUrl = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
-  //   fetch(apiUrl, {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "X-Master-Key": JSONBIN_API_KEY,
-  //     },
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) =>
-  //       dispatch({ type: "dataRecieved", payload: data.record.questions })
-  //     )
-  //     .catch((err) => dispatch({ type: "dataFailed" }));
-  // }, []);
 
   useEffect(() => {
     // Simulate loading data asynchronously
@@ -110,10 +108,10 @@ export default function App() {
     }, 500);  // simulate delay
   }, []);
 
-
+  const initialTime = questions.length * SEC_PER_QUES;
   return (
     <div className="app">
-      <Header />
+      <Header dispatch={dispatch} />
       <Main>
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
@@ -133,6 +131,7 @@ export default function App() {
               question={questions[index]}
               dispatch={dispatch}
               answer={answer}
+              showInfoButton={showInfoButton}
             />
             <Footer>
               <Timer dispatch={dispatch} secRemaining={secRemaining} />
@@ -145,10 +144,12 @@ export default function App() {
             </Footer>
           </>
         )}
+        {status === "preparing" && <WarmUp dispatch={dispatch} />}
         {status === "finished" && (
           <FinishScreen
             points={points}
             totalPoints={totalPoints}
+            timeTaken={initialTime - secRemaining}
             dispatch={dispatch}
           />
         )}

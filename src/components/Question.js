@@ -4,7 +4,7 @@ import InfoModal from './InfoModal';
 import ConfidenceSlider from './ConfidenceSlider';
 import '../style/box.css';
 
-function Question({ question, dispatch, answer }) {
+function Question({ question, dispatch, answer, showInfoButton }) {
     const [isModalOpen, setModalOpen] = useState(false);
 
     const openModal = () => setModalOpen(true);
@@ -18,7 +18,11 @@ function Question({ question, dispatch, answer }) {
         <div className="question-container">
             <div className="question-header">
                 <h4>{question.question}</h4>
-                <button className="info-button" onClick={openModal} style={{ marginLeft: '10px' }}>ℹ️</button>
+                {showInfoButton && (
+                    <button className="info-button" onClick={openModal} style={{marginLeft: '10px'}}>
+                        <img src="/ai.jpg" alt="Info" style={{width: '20px', height: '20px'}}/>
+                    </button>
+                )}
             </div>
             {question.image && (
                 <img
@@ -33,7 +37,7 @@ function Question({ question, dispatch, answer }) {
                 isOpen={isModalOpen}
                 onClose={closeModal}
                 content={{
-                    image: 'https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg', // Example image URL
+                    image: 'https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg', // Example images URL
                     text: 'Here is some additional information about the question.'
                 }}
             />

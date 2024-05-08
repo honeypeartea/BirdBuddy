@@ -4,20 +4,20 @@
       "question": "What bird species is shown in the image?",
       "options": [
         "Blue Jay",
-        "Northern Cardinal",
+        "Red Winged Blackbird",
         "American Robin",
         "Eastern Bluebird"
       ],
       "correctOption": 1,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Red_Winged_Blackbird_0040_4522.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
-      "options": ["Eagle", "Hawk", "Falcon", "Vulture"],
+      "options": ["Eagle", "Hawk", "Yellow Breasted Chat", "Vulture"],
       "correctOption": 2,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Yellow_Breasted_Chat_0033_21873.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
@@ -25,83 +25,83 @@
         "Blue Jay",
         "European Starling",
         "Albatross",
-        "Sandhill Crane"
+        "Fish Crow"
       ],
       "correctOption": 3,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Fish_Crow_0024_26064.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
-        "Woodpecker",
+        "Olive Sided Flycatcher",
         "Sparrow",
         "Warbler",
         "Crow"
       ],
       "correctOption": 0,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Olive_Sided_Flycatcher_0027_30549.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
-        "Lyrebird",
+        "Eared Grebe",
         "Mockingbird",
         "Parrot",
         "Cardinal"
       ],
       "correctOption": 0,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Eared_Grebe_0020_34131.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
-        "Flamingo",
+        "Glaucous Winged Gull",
         "Pelican",
         "Duck",
         "Swan"
       ],
       "correctOption": 0,
       "points": 10,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Glaucous_Winged_Gull_0078_44461.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
         "Canary",
-        "Peacock",
+        "Green Violetear",
         "Goldfinch",
         "Bluebird"
       ],
       "correctOption": 1,
       "points": 20,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Green_Violetear_0009_795647.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
-        "Peacock",
+        "Green Kingfisher",
         "Turkey",
         "Chicken",
         "Pheasant"
       ],
       "correctOption": 0,
       "points": 30,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Green_Kingfisher_0018_71189.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
       "options": [
-        "Owl",
+        "Merganser",
         "Eagle",
         "Hawk",
         "Falcon"
       ],
       "correctOption": 0,
       "points": 20,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Red_Breasted_Merganser_0012_79425.jpg"
     },
     {
       "question": "What bird species is shown in the image?",
@@ -109,11 +109,11 @@
         "Duck",
         "Goose",
         "Swan",
-        "Mallard"
+        "Pelican"
       ],
       "correctOption": 3,
       "points": 30,
-      "image": "https://www.lyricbirdfood.com/media/1869/indigo-bunting.jpg"
+      "image": "./img/Brown_Pelican_0012_94079.jpg"
     }
   ]
 }
